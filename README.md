@@ -18,7 +18,7 @@ stored.
 5. Map the IP address with its MAC address and return the MAC address to client.
 P
 ## PROGRAM - ARP
-### Client:
+### Server:
 ```
 import socket   
 s=socket.socket()    
@@ -32,7 +32,7 @@ c.send(address[ip].encode())
 except KeyError:   
 c.send("Not Found".encode())   
 ```
-### Server:
+### Client:
 ```
 import socket    
 s = socket.socket()    
